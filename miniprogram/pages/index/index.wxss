@@ -1,0 +1,39 @@
+/* pages/index/index.wxss */
+.one>view>view{
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to left,#ff0,#0f0);
+}
+.one .ot{
+  background: brown;
+  height:70rpx;
+  line-height: 70rpx;
+  width:100%;
+  color:#ff0;
+  border-radius: 5%;
+}
+.one .img{
+  width:300rpx;
+  height:300rpx;
+}
+.one{
+  display: flex;
+  margin:10rpx;
+}
+.oz .one{
+  margin-bottom:100rpx;
+}
+.one .ot view{
+  margin:0 auto;
+}
+.btn view button{
+  background: black;
+  color:#fff;
+  width:100%;
+}
+.btn view{
+  width:100%; 
+}
+.right{
+  width:60%;
+}

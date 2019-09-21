@@ -1,0 +1,50 @@
+<van-search
+  value="{{ q }}"
+  placeholder="请输入搜索关键词/作者/书名"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+/>
+<view class="oz">
+  <view wx:for="{{obj.books}}" wx:key="index" class="one">
+      <view>
+        <view class="img"><image src="{{item.image}}"></image></view>
+      </view>
+      <view class="right">
+        <view>
+          <view>书名：</view>
+          <view>{{item.title}}</view>
+        </view>
+        <view>
+          <view>作者：</view>
+          <view>{{item.author}}</view>
+        </view>
+        <view>
+          <view>出版社：</view>
+          <view>{{item.publisher}}</view>
+        </view>
+        <view>
+          <view>出版日期：</view>
+          <view>{{item.pubdate}}</view>
+        </view>
+        <view>
+          <view>总页数：</view>
+          <view>{{item.pages}}</view>
+        </view>
+        <view>
+          <view>价格：</view>
+          <view>{{item.price}}</view>
+        </view>
+        <view class="btn">
+          <view>
+            <button bindtap="jumpD" data-id="{{item.id}}">详情</button>
+          </view>
+        </view>
+        <view class="ot">
+          <view>下一页</view>
+        </view>
+      </view>
+  </view>
+</view>
+
+

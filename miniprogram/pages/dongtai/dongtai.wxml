@@ -1,0 +1,32 @@
+<view class="sd">我添加的书单</view>
+<view>
+  <view>
+    <view wx:for="{{list}}" wx:key="index" class="dt">
+      <view class="left">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="right">
+        <view>
+          <view>
+            书名：
+          </view>
+          <view>
+            {{item.title}}
+          </view>
+        </view>
+        <view>
+          <view>
+          想法：
+          </view>
+          <view>
+            {{item.xf}}
+          </view>
+        </view>
+      </view>
+      <view class="btn">
+        <button bindtap="jumpD" data-id="{{item.id}}">详情</button>
+        <button bindtap="del" data-id="{{item._id}}">删除</button>
+      </view>
+    </view>
+  </view>
+</view>

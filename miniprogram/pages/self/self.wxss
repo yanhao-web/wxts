@@ -1,0 +1,31 @@
+/* pages/self/self.wxss */
+.self{
+  width:100%;
+  height:400rpx;
+  background:#000;
+  text-align: center;
+  color:#ff0;
+  position:relative;
+}
+.self .ava{
+  width:200rpx;
+  height:200rpx;
+  display: block;
+  border-radius: 50%;
+  overflow:hidden;
+  position:absolute;
+  left:50%;
+  transform:translate(-100rpx,60rpx);
+}
+.self .nic{
+  margin-top:300rpx;
+}
+.btn{
+  background: #ff0;
+  color:#000;
+  border-radius: 20rpx;
+}
+.btn0{
+  background: #000;
+  color:#ff0;
+}

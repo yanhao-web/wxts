@@ -1,0 +1,40 @@
+/* pages/dongtai/dongtai.wxss */
+.sd{
+  background: #000;
+  color:#fff;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.dt{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top:50rpx;
+  position: relative;
+  height:200rpx;
+  border-bottom:10rpx solid #0f0;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.right>view{
+  display: flex;
+}
+.left{
+  width:150rpx;
+  height:150rpx;
+}
+.left image{
+  width:100%;
+  height:100%;
+}
+.btn{
+  position: absolute;
+  right:0;
+}
+.btn button{
+  background: #000;
+  color:#fff;
+}

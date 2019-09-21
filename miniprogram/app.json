@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/self/self",
+    "pages/map/map",
+    "pages/details/details",
+    "pages/dongtai/dongtai"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0",
+    "navigationBarTitleText": "图书",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color":"#d1d1d1",
+    "selectedColor":"#000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "图书",
+      "iconPath": "images/01.png",
+      "selectedIconPath": "images/01_active.png"
+    },{
+    "pagePath": "pages/self/self",
+    "text": "个人中心",
+    "iconPath": "images/02.png",
+    "selectedIconPath": "images/02_active.png"
+  },{
+  "pagePath": "pages/map/map",
+  "text": "地图",
+  "iconPath": "images/03.png",
+  "selectedIconPath": "images/03_active.png"
+}]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+<view class="self">
+  <view class="ava">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="nic">
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+<view>
+  <button open-type="getUserInfo" bindgetuserinfo="getUser" class="btn">我的更多信息</button>
+</view>
+<view>
+  <button class="btn0" bindtap="jumpD">我的动态</button>
+</view>

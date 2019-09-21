@@ -1,0 +1,78 @@
+<!--pages/details/details.wxml-->
+<view class="det">
+  <view class="mask">
+  </view>
+  <view class="content">
+  <view class="filter" style="background:url({{obj.image}}) no-repeat top"></view>
+  <view class="img">
+    <image src="{{obj.image}}"></image>
+  </view>
+  <view class="right">
+    <view>
+    <view>书名：</view>
+    <view>{{obj.title}}</view>
+  </view>
+    <view>
+      <view>作者：</view>
+      <view>{{obj.author}}</view>
+  </view>
+  <view>
+    <view>出版社：</view>
+    <view>{{obj.publisher}}</view>
+  </view>
+  <view>
+    <view>出版日期：</view>
+    <view>{{obj.pubdate}}</view>
+  </view>
+  <view>
+    <view>书本风格：</view>
+    <view>{{obj.binding}}</view>
+  </view>
+    <view>
+      <view>总页数：</view>
+      <view>{{obj.pages}}</view>
+  </view>
+  <view>
+    <view>价格：</view>
+    <view>{{obj.price}}</view>
+  </view>
+  <view class="bq">
+    <view>标签：</view>
+    <view wx:for="{{obj.tags}}" wx:key="index" class="iname">
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  </view>
+  </view>
+  <view class="bo">
+  <van-cell-group>
+  <van-field
+    value="{{ xf }}"
+    placeholder="这一刻的想法..."
+    border="{{ false }}"
+    bind:change="onxf"
+  />
+</van-cell-group>
+<view class="add" bindtap="add">+</view>
+<view class="ps">
+  <view wx:for="{{ps}}" wx:key="index">
+    <image src="{{item}}"></image>
+  </view>
+</view>
+<view class="go">
+  <button bindtap="go">发表</button>
+</view>
+  <view>
+    <view>作者介绍：</view>
+    <view>{{obj.author_intro}}</view>
+  </view>
+  <view>
+    <view>描述：</view>
+    <view>{{obj.summary}}</view>
+  </view>
+  <view>
+    <view>章节：</view>
+    <view>{{obj.catalog}}</view>
+  </view>
+  </view>
+</view>
